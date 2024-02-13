@@ -1,0 +1,85 @@
+.player{
+    background-color: #4546467a;
+    width: fit-content;
+    border-radius: 6px;
+    display: flex;
+}
+
+.player img{
+    width: 50px;
+}
+
+#playPauseButton{
+    transition: fill 0.3s ease;
+}
+
+#playPauseButton:hover {
+    fill: #50c773;
+}
+
+.player img{
+    transition: all 0.3s ease;
+}
+
+.player img:hover{
+    filter: brightness(0.75);
+}
+
+.current-track a {
+    text-decoration: none;
+    color: rgb(255, 135, 135);
+    transition: color 0.5s;
+    font-size: 1.1em;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+.progress{
+
+}
+
+#progressBar{
+    width: 100%;
+    color: #454646;
+    display: flex;
+
+}
+
+.playerCommand-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+}
+
+
+.playerCommand {
+    /* Styles pour la section playerCommand */
+}
+
+#metadata p{
+    margin: 15px;
+	font-size: inherit;
+	font-weight: bold;
+	font-family: unset;
+}
+
+#metadata span {
+
+}
+
+#metadata {
+    align-items: center;
+    background-color: #ffffff30;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #0000005e;
+    border-radius: 10px;
+    bottom: 182px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#albumArt {
+    box-shadow: 2px 2px 5px #0000005e;
+    border-radius: 5px;
+}

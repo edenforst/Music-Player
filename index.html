@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotigram</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="spectrum.css">
+</head>
+<body>
+
+    <label for="fileName">Select audio files :</label>
+    <input type="file" multiple="multiple" id="audio_file" accept="audio/*" />
+    
+    <div>
+        <ul id="playlist">
+        </ul>
+    </div>
+
+    <figure>
+        <figcaption>A media info player</figcaption>
+        <audio controls id="audio_player"></audio>
+    </figure>
+
+    <div id="metadata">
+        
+        <p><img id="albumArt"></img></p>
+        <p>Titre: <span id="title"></span></p>
+        <p>Artiste:<span id="artist"></span></p>
+        <p>Album: <span id="album"></span></p>
+        <p>Année: <span id="year"></span></p>
+
+    </div>
+
+    <div class="playerCommand-container">
+        <div class="playerCommand">
+
+            <div class="progress" onclick="seek(event)">
+                <progress id="progressBar" value="0" max="100"></progress>
+            </div>
+
+            <div class="player">
+                <img src="icon/shuffle_white_24dp.svg" alt="" id="shuffleButton">
+                <img src="icon/skip_previous_white_24dp.svg" alt="" id="previousButton">
+                <img src="icon/play_circle_outline_white_24dp.svg" alt="" id="playPauseButton">
+                <img src="icon/skip_next_white_24dp.svg" alt="" id="nextButton">
+                <img src="icon/repeat_white_24dp.svg" alt="" id="repeatButton">
+            </div>
+
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="spectrum.js"></script>
+    <script src="script.js"></script>
+    <script src="jsmediatags.min.js"></script>
+
+</body>
+</html>
